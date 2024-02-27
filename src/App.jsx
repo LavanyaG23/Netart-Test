@@ -1,4 +1,3 @@
-
 import React from 'react'
 import './App.css';
 import Logo from './components/logo';
@@ -41,15 +40,30 @@ const App = () => {
       <div className='footer'><h4>C.R.I FLUIDS SYSTEMS PRODUCTS CATER TO DIVERSE SEGMENTS</h4></div>
       <div  className="centered-content"><p>CHEMICALS & PROCESS<span>|</span>POWER<span>|</span>WATER & WASTE WATER<span>|</span>OIL & GAS<span>|</span>PHARMA<span>|</span>SUGARS & DISTILLERIES<span>|</span>PAPER & PULP<span>|</span>MARINE & DEFENCE<span>|</span>METAL & MINING<span>|</span>FOOD & BEVERAGE<span>|</span>PETROCHEMICAL & REFINERIES<span>|</span>SOLAR<span>|</span>BUILDING<span>|</span>HVAC<span>|</span>FIRE FIGHTING<span>|</span>AGRICULTURE & RESIDENTIAL</p></div>
       <div className="red-box">
-      <a>
-        <img src={CallImage} alt="Phone Icon" /> Toll free <b>1800 200 1234</b>
-      </a>
-      <a>
-        <img src={FacebookImage} alt="Facebook Icon" /> www.facebook.com/cripumps
-      </a>
-      <a>
-        <img src={globeImage} alt="Website Icon" /> www.crigroups.com
-      </a>
+        <div className='redbox1'>
+          <div>
+            <img className= "redIcon1" src={CallImage} alt="Phone Icon" /> 
+          </div>
+          <div>
+            <p>Toll free <b>1800 200 1234</b></p>
+          </div>
+        </div>
+        <div className='redbox2'>
+          <div>
+            <img className= "redIcon2" src={FacebookImage} alt="Facebook Icon" /> 
+          </div>
+          <div>
+            <p>www.facebook.com/cripumps</p>
+          </div>
+        </div>
+        <div className='redbox3'>
+          <div>
+            <img className= "redIcon3" src={globeImage} alt="Website Icon" /> 
+          </div>
+          <div>
+            <p>www.crigroups.com</p>
+          </div>
+        </div>
     </div>
 
     </div>
