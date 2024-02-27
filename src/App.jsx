@@ -85,9 +85,9 @@ const App = () => {
       <div className='footer'><h4>C.R.I FLUIDS SYSTEMS PRODUCTS CATER TO DIVERSE SEGMENTS</h4></div>
       <div  className="centered-content"><p>CHEMICALS & PROCESS<span>|</span>POWER<span>|</span>WATER & WASTE WATER<span>|</span>OIL & GAS<span>|</span>PHARMA<span>|</span>SUGARS & DISTILLERIES<span>|</span>PAPER & PULP<span>|</span>MARINE & DEFENCE<span>|</span>METAL & MINING<span>|</span>FOOD & BEVERAGE<span>|</span>PETROCHEMICAL & REFINERIES<span>|</span>SOLAR<span>|</span>BUILDING<span>|</span>HVAC<span>|</span>FIRE FIGHTING<span>|</span>AGRICULTURE & RESIDENTIAL</p></div>
       <div className="red-box">
-        <a href="tel:YourPhoneNumber">Call</a>
-        <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a href="mailto:youremail@example.com">Email</a>
+        <a href="tel:YourPhoneNumber">Toll free <b>1800 200 1234</b> </a>
+        <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener noreferrer">www.facebook.com/cripumps</a>
+        <a href="mailto:youremail@example.com">www.crigroups.com</a>
       </div>
     </div>
   )
