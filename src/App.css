@@ -1,3 +1,4 @@
+
 /* styles.css */
 
 body, html {
@@ -15,12 +16,13 @@ body, html {
 
 .logo-container {
   text-align: center; /* Center the content horizontally */
-  margin-bottom: 20px; /* Add margin bottom for spacing */
+  margin-bottom: 5px; /* Add margin bottom for spacing */
+  margin-top: 5px;
 }
 
 .logo-image {
-  max-width: 100%; /* Ensure the logo doesn't exceed its container */
-  max-height: 100px; /* Adjust the maximum height as needed */
+  max-width: 120%; /* Ensure the logo doesn't exceed its container */
+  max-height: 120px; /* Adjust the maximum height as needed */
 }
 
 .image-container {
@@ -30,26 +32,27 @@ body, html {
 }
 
 .left-image-container {
-  flex: 1; /* Each image container takes equal space */
+  width: 31%;
+  max-width: 31%;
 }
 
 .right-image-container {
   display: flex; /* Add display flex to align children */
   flex-direction: column; /* Stack content vertically */
   align-items: flex-start; /* Align items to the left */
-  flex: 1; /* Each image container takes equal space */
-  max-width: 50%; /* Each image container takes half of the available space */
+  flex: 3; /* Each image container takes equal space */
+  max-width: 70%; /* Each image container takes half of the available space */
   margin-right: 50px; /* Add space on the right side of the right image container */
   align-items: center;
 }
 
 .left-image {
-  width: 60%;
+  width: 100%;
   height: auto;
 }
 
 .right-image {
-  width: 110%;
+  width: 100%;
   height: auto;
 }
 
@@ -61,6 +64,35 @@ body, html {
 .right-content-top,
 .right-content-bottom {
   text-align: left; /* Align the content to the left */
+}
+
+.additional-content {
+  text-align: center; /* Center the content horizontally */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 50px; /* Set a fixed height or adjust as needed */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.additional-content p {
+  margin: 0; /* Remove default margin */
+}
+
+.bottom-image{
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.additional-image {
+  width: 80%; /* Set width for the additional image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.centeredcontent {
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -88,7 +120,6 @@ body, html {
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
     height: 200px; /* Set a fixed height or adjust as needed */
-    background-color: #f0f0f0; /* Background color for the additional content */
   }
 
   .additional-content p {
@@ -100,4 +131,55 @@ body, html {
     height: auto; /* Maintain aspect ratio */
     margin-top: 20px; /* Add space above the additional image */
   }
+
+}
+
+
+
+.red-line {
+  border-bottom: 2px solid red;
+  margin: 0 20px; /* Adjust the margin on the right and left sides */
+  margin-bottom: 10px; /* Reduce the bottom margin */
+}
+
+
+.footer {
+  text-align: center;
+} 
+
+.centered-content {
+  text-align: center;
+  margin: 0 20px; 
+  margin-bottom: 20px;/* Adjust the margin on the right and left sides */
+}
+
+.centered-content p {
+  color: black; /* Set text color */
+  margin: 0; /* Remove default margin */
+}
+
+.centered-content p span {
+  color: red; /* Set color of the divider */
+  margin: 0 5px; /* Add space around the divider */
+}
+
+.red-box {
+  display: flex;
+  margin: 0 20px; /* Adjust the margin on the right and left sides */
+  margin-bottom: 10px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ed3236;
+  padding: 10px;
+  color: white;
+  height: 100px;
+}
+
+.red-box a {
+  text-decoration: none;
+  color: white;
+}
+
+.red-box a:hover {
+  text-decoration: underline;
 }
