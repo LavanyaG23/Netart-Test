@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css';
 import Logo from './components/logo';
-import { image1, image2 } from './assets';
+import { image1, image2, image3 } from './assets';
 
 const App = () => {
   return (
@@ -30,6 +30,7 @@ const App = () => {
       <div className="additional-content">
         <p>INSTALLED OVER 10 LAKHS STAR RATED PUMPSETS ACROSS THE COUNTRY RESULTING IN A CUMULATIVE SAVING OF MORE THAN 9,000 MILLION UNITS OF POWER FOR THE NATION.</p>
       </div>
+      <img src={image3} alt="Image 3" className="additional-image" />
     </div>
   )
 }

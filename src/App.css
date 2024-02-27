@@ -31,7 +31,6 @@ body, html {
 
 .left-image-container {
   flex: 1; /* Each image container takes equal space */
-   /* Each image container takes half of the available space */
 }
 
 .right-image-container {
@@ -82,6 +81,7 @@ body, html {
     margin-bottom: 50%; /* Add space below the right image container on smaller screens */
   }
 
+  /* Move additional content and image styles inside media query */
   .additional-content {
     text-align: center; /* Center the content horizontally */
     display: flex;
@@ -90,8 +90,14 @@ body, html {
     height: 200px; /* Set a fixed height or adjust as needed */
     background-color: #f0f0f0; /* Background color for the additional content */
   }
-  
+
   .additional-content p {
-    margin-left: 20px; /* Remove default margin */
+    margin: 0; /* Remove default margin */
+  }
+
+  .additional-image {
+    width: 50%; /* Set width for the additional image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Add space above the additional image */
   }
 }
