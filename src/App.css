@@ -175,6 +175,17 @@ body, html {
     width: 100vw;
   }
 
+  .logo-container {
+    text-align: center; /* Center the content horizontally */
+    margin-bottom: 0; /* Add margin bottom for spacing */
+    margin-top: 5px;
+  }
+  
+  .logo-image {
+    max-width: 80%; /* Ensure the logo doesn't exceed its container */
+    max-height: 80px; /* Adjust the maximum height as needed */
+  }
+
   .image-container {
     display: flex;
     flex-wrap: wrap;
@@ -182,8 +193,8 @@ body, html {
   }
   
   .left-image-container {
-    width: 31%;
-    max-width: 31%;
+    width: 33%;
+    max-width: 33%;
   }
   
   .right-image-container {
@@ -191,11 +202,28 @@ body, html {
     flex-direction: column; /* Stack content vertically */
     align-items: flex-start; /* Align items to the left */
     flex: 3; /* Each image container takes equal space */
-    max-width: 70%; /* Each image container takes half of the available space */
-    margin-right: 50px; /* Add space on the right side of the right image container */
+    max-width: 50%; /* Each image container takes half of the available space */
+    margin-right: 10px; /* Add space on the right side of the right image container */
     align-items: center;
-    margin-top: 50px;
-    margin-left: 30px;
+    margin-top: 10px;
+    margin-left: 100px;
+    font-size: xx-small;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .right-image-container h5{
+    font-size: xx-small;
+    font-weight: bolder;
+    align-items: flex-start;
+  }
+
+  .right-content-top h5{
+    margin-bottom: -90px;
+    margin-left: -110px;
+  }
+
+  .right-content-top p{
+    margin-left: -130px;
   }
   
   .left-image {
@@ -204,7 +232,7 @@ body, html {
   }
   
   .right-image {
-    width: 100%;
+    width: 140%;
     height: auto;
   }
 
@@ -228,7 +256,13 @@ body, html {
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
-    height: 100px; /* Set a fixed height or adjust as needed */
+    height: 100px; 
+    font-size: xx-small; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-top: -10px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .additional-content p {
@@ -236,15 +270,54 @@ body, html {
   }
 
   .additional-image {
-    width: 90%; /* Set width for the additional image */
+    width: 80%; /* Set width for the additional image */
     height: auto; /* Maintain aspect ratio */
+  }
+
+  .bottom-image{
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-top: -50px;
+  }
+
+  .centeredcontent {
+    text-align: center;
+    font-size: xx-small;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: x-small;
+    font-weight: bolder;
+    margin-top: -10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  } 
+
+  .centered-content {
+    text-align: center;
+    margin: 0 20px; 
+    margin-bottom: 20px;/* Adjust the margin on the right and left sides */
+  }
+  
+  .centered-content p {
+    color: black; /* Set text color */
+    margin: 0;
+    font-size: xx-small;
+    font-family: Arial, Helvetica, sans-serif; /* Remove default margin */
+  }
+  
+  .centered-content p span {
+    color: red; /* Set color of the divider */
+    margin: 0 5px; /* Add space around the divider */
   }
 
   .red-box a {
     text-decoration: none;
     color: white;
     padding-bottom: 5px;
-    size: 10px;
+    size: 20px;
   }
   
   .red-box a:hover {
@@ -255,22 +328,24 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 10px;
+    font-size: xx-small;
+    font-weight: 100;
+    margin-bottom: 10px;
   }
   
   .redIcon1 {
-    height: 20px;
-    margin-bottom: -10px;
+    height: 25px;
+    margin-right: -8px;
   }
 
   .redIcon2 {
-    height: 20px;
-    margin-bottom: -5px;
+    height: 25px;
+    margin-right: -8px;
   }
 
   .redIcon3 {
-    height: 20px;
-    margin-bottom: -5px;
+    height: 25px;
+    margin-right: -8px;
   }
 
 }
