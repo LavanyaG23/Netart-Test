@@ -16,7 +16,7 @@ const App = () => {
         <div className="right-image-container">
           <div className='right-content-top'>
           <h5><b>C.R.I PUMPS WINS THE NATIONAL ENERGY CONSERVATION AWARD 2018 FOR THE 4TH TIME</b></h5>
-          <p><ul><li>C.R.I's energy efficient products are well recognized by various Government Institutions, as trustworthy products for various projects across the globe to save energy.</li>
+          <p className='two-points'><ul><li>C.R.I's energy efficient products are well recognized by various Government Institutions, as trustworthy products for various projects across the globe to save energy.</li>
           <li>C.R.I is the highest contributor in the country for the projects of EESL(Energy Efficient Services Limited) to replace the old inefficient pumps with 5 star rated energy efficient smart pumps with IoT enabled control panel.</li>
           </ul></p>
           </div>
@@ -53,7 +53,7 @@ const App = () => {
             <img className= "redIcon2" src={FacebookImage} alt="Facebook Icon" /> 
           </div>
           <div>
-            <p>www.facebook.com/cripumps</p>
+            <a href="https://www.facebook.com/cripumps" target='_blank'>www.facebook.com/cripumps</a>
           </div>
         </div>
         <div className='redbox3'>
@@ -61,7 +61,7 @@ const App = () => {
             <img className= "redIcon3" src={globeImage} alt="Website Icon" /> 
           </div>
           <div>
-            <p>www.crigroups.com</p>
+            <a href="https://www.crigroups.com" target="_blank">www.crigroups.com</a>
           </div>
         </div>
     </div>

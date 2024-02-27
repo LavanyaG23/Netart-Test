@@ -8,6 +8,7 @@ body, html {
 
 .app {
   background: linear-gradient(to bottom, #ffffff, #fff8b0); /* Background gradient */
+  background-size: cover;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -94,47 +95,6 @@ body, html {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .image-container {
-    flex-direction: column; /* Stack images vertically on smaller screens */
-  }
-
-  .left-image-container,
-  .right-image-container {
-    max-width: 100%; 
-    margin-left: 0;
-    margin-bottom: 20px;
-    margin-top: 0;/* Each image container takes full width on smaller screens */
-  }
-
-  .right-image-container {
-    margin-right: 70px; /* Remove margin on smaller screens */
-    margin-bottom: 50%; /* Add space below the right image container on smaller screens */
-  }
-
-  /* Move additional content and image styles inside media query */
-  .additional-content {
-    text-align: center; /* Center the content horizontally */
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    height: 200px; /* Set a fixed height or adjust as needed */
-  }
-
-  .additional-content p {
-    margin: 0; /* Remove default margin */
-  }
-
-  .additional-image {
-    width: 50%; /* Set width for the additional image */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 20px; /* Add space above the additional image */
-  }
-
-}
-
-
-
 .red-line {
   border-bottom: 2px solid red;
   margin: 0 20px; /* Adjust the margin on the right and left sides */
@@ -193,4 +153,124 @@ body, html {
   height: 30px;
   padding-bottom: 5px;
   padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+  .app {
+    background: linear-gradient(to bottom, #ffffff, #fff8b0); /* Background gradient */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the image containers horizontally */
+  }
+  
+  .left-image-container {
+    width: 31%;
+    max-width: 31%;
+  }
+  
+  .right-image-container {
+    display: flex; /* Add display flex to align children */
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the left */
+    flex: 3; /* Each image container takes equal space */
+    max-width: 70%; /* Each image container takes half of the available space */
+    margin-right: 50px; /* Add space on the right side of the right image container */
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  
+  .left-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .right-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .two-points {
+    margin-top: 100px;
+    margin-left: -150px;
+  }
+
+  .right-image {
+    width: 130%;
+    margin-left: -100px;
+  }
+
+  .right-content-bottom {
+    margin-left: -110px;
+  }
+
+  /* Move additional content and image styles inside media query */
+  .additional-content {
+    text-align: center; /* Center the content horizontally */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100px; /* Set a fixed height or adjust as needed */
+  }
+
+  .additional-content p {
+    margin: 0; /* Remove default margin */
+  }
+
+  .additional-image {
+    width: 90%; /* Set width for the additional image */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .red-box a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+    size: 10px;
+  }
+  
+  .red-box a:hover {
+    text-decoration: underline;
+  }
+  
+  .redbox1, .redbox2, .redbox3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+  }
+  
+  .redIcon1 {
+    height: 20px;
+    margin-bottom: -10px;
+  }
+
+  .redIcon2 {
+    height: 20px;
+    margin-bottom: -5px;
+  }
+
+  .redIcon3 {
+    height: 20px;
+    margin-bottom: -5px;
+  }
+
 }
