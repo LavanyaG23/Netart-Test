@@ -26,14 +26,14 @@ body, html {
 }
 
 .image-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 2fr 3.5fr;
   justify-content: center; /* Center the image containers horizontally */
 }
 
 .left-image-container {
-  width: 31%;
-  max-width: 31%;
+  width: 80%;
+  max-width: 80%;
 }
 
 .right-image-container {
@@ -41,9 +41,107 @@ body, html {
   flex-direction: column; /* Stack content vertically */
   align-items: flex-start; /* Align items to the left */
   flex: 3; /* Each image container takes equal space */
-  max-width: 70%; /* Each image container takes half of the available space */
+  max-width: 100%; /* Each image container takes half of the available space */
   margin-right: 50px; /* Add space on the right side of the right image container */
   align-items: center;
+}
+
+@media (max-width:1200px) {
+  .image-container{
+      grid-template-columns: 2fr 3.5fr;
+      justify-content: center;
+  }
+
+  .left-image-container {
+    width: 90%;
+    max-width: 90%;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  * {
+    font-size: 14px;
+  }
+
+  .image-container{
+      grid-template-columns: 1fr;
+  }
+
+  .left-image-container {
+    width: 30%;
+    max-width: 30%;
+    margin: auto;
+  }
+
+  .right-image-container {
+    grid-row: 2;
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .left-image {
+    width: 50px;
+    height: 50%;
+  }
+
+  .right-image {
+    width: 40px;
+    height: 50%;
+  }
+
+  .right-content-bottom p{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .right-content-top h5 {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .two-points {
+    margin-left: -10px;
+    margin-right: 10px;
+  }
+
+  .additional-content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .bottom-image {
+    margin-top: 10px;
+  }
+
+  .red-box-container .red-box {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .redbox2 {
+    grid-row: 2;
+  }
+
+  .redbox3 {
+    grid-row: 3;
+    margin-top: 5px;
+  }
+
+  .centeredcontent {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
 }
 
 .left-image {
@@ -110,6 +208,8 @@ body, html {
   text-align: center;
   margin: 0 20px; 
   margin-bottom: 20px;/* Adjust the margin on the right and left sides */
+  white-space: normal; /* Prevent text from wrapping */
+  overflow-x: hidden; /* Hide any content that overflows horizontally */
 }
 
 .centered-content p {
@@ -123,15 +223,25 @@ body, html {
 }
 
 .red-box {
-  display: flex;
-  margin: 0 20px; /* Adjust the margin on the right and left sides */
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 10px;
-  justify-content: space-around;
-  align-items: center;
   background-color: #ed3236;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  padding-top: 10px;
   color: white;
-  height: 90px;
+  height: 100%;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.redbox1, .redbox2, .redbox3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .red-box a {
@@ -144,208 +254,8 @@ body, html {
   text-decoration: underline;
 }
 
-.redbox1, .redbox2, .redbox3 {
-  display: flex;
-  align-items: center;
-}
-
 .redIcon1, .redIcon2, .redIcon3 {
   height: 30px;
   padding-bottom: 5px;
   padding-right: 5px;
-}
-
-@media (max-width: 768px) {
-
-  * {
-    box-sizing: border-box;
-  }
-
-  body, html {
-    margin: 0;
-    padding: 0;
-  }
-
-  .app {
-    background: linear-gradient(to bottom, #ffffff, #fff8b0); /* Background gradient */
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100vw;
-  }
-
-  .logo-container {
-    text-align: center; /* Center the content horizontally */
-    margin-bottom: 0; /* Add margin bottom for spacing */
-    margin-top: 5px;
-  }
-  
-  .logo-image {
-    max-width: 80%; /* Ensure the logo doesn't exceed its container */
-    max-height: 80px; /* Adjust the maximum height as needed */
-  }
-
-  .image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the image containers horizontally */
-  }
-  
-  .left-image-container {
-    width: 33%;
-    max-width: 33%;
-  }
-  
-  .right-image-container {
-    display: flex; /* Add display flex to align children */
-    flex-direction: column; /* Stack content vertically */
-    align-items: flex-start; /* Align items to the left */
-    flex: 3; /* Each image container takes equal space */
-    max-width: 50%; /* Each image container takes half of the available space */
-    margin-right: 10px; /* Add space on the right side of the right image container */
-    align-items: center;
-    margin-top: 10px;
-    margin-left: 100px;
-    font-size: xx-small;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .right-image-container h5{
-    font-size: xx-small;
-    font-weight: bolder;
-    align-items: flex-start;
-  }
-
-  .right-content-top h5{
-    margin-bottom: -90px;
-    margin-left: -110px;
-  }
-
-  .right-content-top p{
-    margin-left: -130px;
-  }
-  
-  .left-image {
-    width: 100%;
-    height: auto;
-  }
-  
-  .right-image {
-    width: 140%;
-    height: auto;
-  }
-
-  .two-points {
-    margin-top: 100px;
-    margin-left: -150px;
-  }
-
-  .right-image {
-    width: 130%;
-    margin-left: -100px;
-  }
-
-  .right-content-bottom {
-    margin-left: -110px;
-  }
-
-  /* Move additional content and image styles inside media query */
-  .additional-content {
-    text-align: center; /* Center the content horizontally */
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    height: 100px; 
-    font-size: xx-small; 
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    margin-top: -10px;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  .additional-content p {
-    margin: 0; /* Remove default margin */
-  }
-
-  .additional-image {
-    width: 80%; /* Set width for the additional image */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .bottom-image{
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    margin-top: -50px;
-  }
-
-  .centeredcontent {
-    text-align: center;
-    font-size: xx-small;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .footer {
-    text-align: center;
-    font-size: x-small;
-    font-weight: bolder;
-    margin-top: -10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  } 
-
-  .centered-content {
-    text-align: center;
-    margin: 0 20px; 
-    margin-bottom: 20px;/* Adjust the margin on the right and left sides */
-  }
-  
-  .centered-content p {
-    color: black; /* Set text color */
-    margin: 0;
-    font-size: xx-small;
-    font-family: Arial, Helvetica, sans-serif; /* Remove default margin */
-  }
-  
-  .centered-content p span {
-    color: red; /* Set color of the divider */
-    margin: 0 5px; /* Add space around the divider */
-  }
-
-  .red-box a {
-    text-decoration: none;
-    color: white;
-    padding-bottom: 5px;
-    size: 20px;
-  }
-  
-  .red-box a:hover {
-    text-decoration: underline;
-  }
-  
-  .redbox1, .redbox2, .redbox3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: xx-small;
-    font-weight: 100;
-    margin-bottom: 10px;
-  }
-  
-  .redIcon1 {
-    height: 25px;
-    margin-right: -8px;
-  }
-
-  .redIcon2 {
-    height: 25px;
-    margin-right: -8px;
-  }
-
-  .redIcon3 {
-    height: 25px;
-    margin-right: -8px;
-  }
-
 }
